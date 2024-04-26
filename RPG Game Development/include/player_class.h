@@ -4,11 +4,19 @@
 #include <fstream>
 #include <string>
 #include <random>
+#include <vector>
+#include <memory>
+
+#include "item_class.h"
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
+using std::vector;
+using std::unique_ptr;
+using std::make_unique;
+using std::move;
 using std::random_device;
 using std::mt19937;
 using std::uniform_int_distribution;
@@ -27,6 +35,8 @@ private:
     int P_Experience;
     int P_AttributePoints;
     int P_Gold;
+
+    vector<unique_ptr<Item>> Inventory;
 
 public:
 
@@ -58,8 +68,17 @@ public:
     bool isAlive();
     int dealDmg();
     void takeDmg(int dmg);
-    int addGold(int amount);
+    void addGold(int amount);
     bool useGold(int amount);
+
+    void displayInventory();
+    void displayItemInfo(int index);
+    int invetorySize();
+    template <typename T>
+    void addItem(vector<T>& items, int index) {
+        unique_ptr<Item> copiedItem = make_unique<T>(items[index]);
+        Inventory.push_back(move(copiedItem));
+    }
 
 private:
     int genRandDmg();

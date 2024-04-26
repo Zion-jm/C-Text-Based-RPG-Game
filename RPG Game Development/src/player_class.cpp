@@ -114,7 +114,7 @@ void Player::takeDmg(int dmg) {
     P_Health -= dmg;
 }
 
-int Player::addGold(int amount) {
+void Player::addGold(int amount) {
     P_Gold += amount;
 }
 bool Player::useGold(int amount) {
@@ -130,9 +130,37 @@ bool Player::useGold(int amount) {
     }
 }
 
+void Player::displayInventory() {
+    int counter = 1;
+    for(const auto& item : Inventory) {
+        cout << counter << ".) Name: ";
+        item->getName();
+        cout << endl;
+        counter++;
+    }
+}
+
+void Player::displayItemInfo(int index) {
+    Inventory[index - 1]->displayItemInfo();
+}
+
+int Player::invetorySize() {
+    return Inventory.size();
+}
+
 int Player::genRandDmg() {
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<int> distribution(P_MinAtk, P_MaxAtk);
     return distribution(gen);
 }
+
+
+
+
+
+
+
+
+
+

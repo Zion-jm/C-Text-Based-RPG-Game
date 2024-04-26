@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1713882354 source:d:\joshua's files\game development\rpg game development\main.cpp
+1714124517 source:d:\joshua's files\game development\rpg game development\main.cpp
 	"game_utility.h"
 	"myCharacter_section.h"
 	"player_class.h"
+	"item_list.h"
 
 1713848207 d:\joshua's files\game development\rpg game development\include\game_utility.h
 	<iostream>
@@ -13,26 +14,31 @@
 1713864387 source:d:\joshua's files\game development\rpg game development\src\game_utility.cpp
 	"game_utility.h"
 
-1713864077 d:\joshua's files\game development\rpg game development\include\mycharacter_section.h
+1714124084 d:\joshua's files\game development\rpg game development\include\mycharacter_section.h
 	"game_utility.h"
 	"profile.h"
+	"profile_section.h"
+	"status_section.h"
+	"inventory_section.h"
 	"player_class.h"
 
-1713882354 d:\joshua's files\game development\rpg game development\include\player_class.h
+1714125821 d:\joshua's files\game development\rpg game development\include\player_class.h
 	<iostream>
 	<fstream>
 	<string>
 	<random>
+	<vector>
+	<memory>
+	"item_class.h"
 
-1713868654 source:d:\joshua's files\game development\rpg game development\src\mycharacter_section.cpp
-	"profile_section.h"
-	"status_section.h"
+1714124052 source:d:\joshua's files\game development\rpg game development\src\mycharacter_section.cpp
+	"myCharacter_section.h"
 
 1713864120 d:\joshua's files\game development\rpg game development\include\profile_section.h
 	"game_utility.h"
 	"player_class.h"
 
-1713882535 source:d:\joshua's files\game development\rpg game development\src\player_class.cpp
+1714125906 source:d:\joshua's files\game development\rpg game development\src\player_class.cpp
 	"player_class.h"
 
 1713878835 source:d:\joshua's files\game development\rpg game development\src\profile_section.cpp
@@ -44,4 +50,25 @@
 
 1713882687 source:d:\joshua's files\game development\rpg game development\src\status_section.cpp
 	"status_section.h"
+
+1714123168 d:\joshua's files\game development\rpg game development\include\item_class.h
+	"game_utility.h"
+	<memory>
+
+1714123224 source:d:\joshua's files\game development\rpg game development\src\item_class.cpp
+	"item_class.h"
+
+1714122783 d:\joshua's files\game development\rpg game development\include\inventory_section.h
+	"game_utility.h"
+	"player_class.h"
+
+1714122781 source:d:\joshua's files\game development\rpg game development\src\inventory_section.cpp
+	"inventory_section.h"
+
+1714123663 source:d:\joshua's files\game development\rpg game development\src\item_list.cpp
+	"item_list.h"
+
+1714123715 d:\joshua's files\game development\rpg game development\include\item_list.h
+	"item_class.h"
+	<vector>
 

@@ -35,12 +35,16 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/game_utility.h" />
+		<Unit filename="include/item_class.h" />
+		<Unit filename="include/item_list.h" />
 		<Unit filename="include/myCharacter_section.h" />
 		<Unit filename="include/player_class.h" />
 		<Unit filename="include/profile_section.h" />
 		<Unit filename="include/status_section.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/game_utility.cpp" />
+		<Unit filename="src/item_class.cpp" />
+		<Unit filename="src/item_list.cpp" />
 		<Unit filename="src/myCharacter_section.cpp" />
 		<Unit filename="src/player_class.cpp" />
 		<Unit filename="src/profile_section.cpp" />

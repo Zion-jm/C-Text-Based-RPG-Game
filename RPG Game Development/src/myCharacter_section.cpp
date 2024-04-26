@@ -1,5 +1,4 @@
-#include "profile_section.h"
-#include "status_section.h"
+#include "myCharacter_section.h"
 
 int MyCharacterSection(Player& User) {
     int choice;
@@ -29,7 +28,7 @@ int MyCharacterSection(Player& User) {
             break;
 
         case 3://!!Inventory Section
-
+            InventorySection(User);
             break;
         }
     }

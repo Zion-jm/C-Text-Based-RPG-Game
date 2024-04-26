@@ -1,6 +1,7 @@
 #include "game_utility.h"
 #include "myCharacter_section.h"
 #include "player_class.h"
+#include "item_list.h"
 
 int main() {
     string UserName;
@@ -17,6 +18,13 @@ int main() {
 
         User.setName();
     }
+
+    User.addItem(WeaponList, 3);
+    User.addItem(ConsumableList, 1);
+    User.addItem(ArmorList, 2);
+    User.addItem(ArmorList, 8);
+    User.addItem(WeaponList, 8);
+    User.addItem(WeaponList, 2);
 
     int choice;
     while(true) {
